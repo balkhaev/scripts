@@ -34,7 +34,7 @@ module.exports = ({ dumpFile } = {}) => {
       dump.data = data;
     },
     getDumpData(key) {
-      return dump.data[key];
+      return key ? dump.data[key] : dump.data;
     }
   }
 }
